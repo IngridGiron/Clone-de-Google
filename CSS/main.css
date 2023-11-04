@@ -1,0 +1,230 @@
+body{
+    /* margin - margen del elemento */
+    margin: 0;
+    /* padding - "margen" hacia adentro */
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* **********************************************
+*************************************************
+************************************************* */
+/* NAVEGACIÓN */
+
+header {
+    /* width ancho // height-alto */
+    /* El ancho de la caja abarca el 100% de la página */
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    /* justificar a la derecha*/
+    /* Nos habilita usar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    /* Eliminar los puntitos de la lista */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* centrado verticalmente */
+    align-items: center;
+}
+
+a {
+    /* Quitar línea debajo del texto */
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    /* margen del lado derecho */
+    margin-right: 20px;
+}
+
+/* icóno del menú */
+nav .nav-right-section .menu{
+    /* agregar ícono desde css */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    /* para que las imágenes no se repitan */
+    background-repeat: no-repeat;
+}
+
+/* imagen del usuarix */
+nav .nav-right-section img{
+    /* redondeando bordes */
+    border-radius: 100%;
+    /* Cambiar tamaño de la imagen */
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+/* ************************************** */
+/* **************************** */
+/* ******************* */
+/* MAIN */
+
+main{
+    /* agregar espacio entre header y main */
+    margin-top: 200px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    /* Centrar absolutamente gracias a los márgenes automáticos */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 90px;
+}
+
+main .main-input{
+    width: 530px;
+    /* Centrar absolutamente gracias a los márgenes automáticos */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    /* ancho borde || borde-estilo || borde-color */
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    width: 525px;
+}
+
+main .main-input input{
+    height: 35px;
+    /* Quitar el borde */
+    border: none;
+    /* Quitar el borde cuando está activo el input */
+    outline: none;
+    width: 430px;
+}
+
+main .main-input-container:hover{
+    box-shadow: 2px 2px 2px 2px rgb(224, 223, 223);
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 7%;
+    /* para que las imágenes no se repitan */
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 10%;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+/* ********************************** */
+/* ************************ */
+/* *************** */
+/* BOTONESS */
+
+main .botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+main .botones .BCG{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 10px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 10px 4px;
+    padding: 16px;
+    text-align: center;
+}
+main .botones .VATS{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 10px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 10px 4px;
+    padding: 16px;
+    text-align: center;
+}
+
+/* ********************************** */
+/* ************************ */
+/* *************** */
+/* FOOTER */
+
+footer {
+    background-color:#dadce080;
+    margin-top: 25%;
+    }
+   
+footer a{
+    color: #70757a;
+}
+footer nav .nav-botton-left-section{
+    height: 40px;
+    /* Eliminar puntitos */
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid #dadce0;
+}
+
+footer nav .nav-botton-left-section2{
+    height: 60px;
+    /* Eliminar puntitos */
+    list-style: none;
+    display: flex;
+}
+    
+footer nav .nav-botton-left-section2 a{
+    margin-right: 40px;
+}
+
+footer nav .nav-footer-menu .left{
+    justify-content: left;
+    
+    align-items: left;
+}
+
+footer nav .nav-footer-menu .right{
+    float: right;
+    justify-content: right;
+    
+    align-items: right;
+}
+
